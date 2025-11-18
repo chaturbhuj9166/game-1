@@ -131,6 +131,33 @@
     .mobile-controls{display:flex}
     .panel{order:2}
   }
+  @media (max-width:880px){
+  .container{
+    grid-template-columns:1fr;
+    max-width: 100%;
+    padding: 10px;
+  }
+  .panel{
+    order: 2;
+    padding: 10px 15px;
+    overflow-y: auto; /* scrollable */
+    max-height: 60vh;
+  }
+  .controls button {
+    padding: 14px 16px;
+    font-size: 16px;
+  }
+  .mobile-controls {
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .dpad button {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 </style>
 </head>
 <body>
